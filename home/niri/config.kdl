@@ -518,6 +518,7 @@ binds {
     Mod+Q hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
     Mod+Space hotkey-overlay-title="Run an Application: wofi" { spawn-sh "pkill wofi || wofi --show drun"; }
     Mod+B { spawn "vivaldi"; }
+    Mod+E { spawn "thunar"; }
 
     // Example volume keys mappings for PipeWire & WirePlumber.
     // The allow-when-locked=true property makes them work even when the session is locked.

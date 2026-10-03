@@ -2,7 +2,7 @@
     # install archive tools
     home.packages = with pkgs; [
     	zip
-    	unzip
-    	rar
+	unrar
+	p7zip
     ];
 }

@@ -44,7 +44,7 @@ in
       };
     };
     services = {
-      flatpak.enable = false;
+      flatpak.enable = true;
       libinput.enable = true;
       greetd = {
         enable = true;

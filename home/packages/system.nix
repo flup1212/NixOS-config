@@ -4,12 +4,20 @@
     	brightnessctl
     	playerctl
     	wl-clipboard
+	cliphist
     	waybar
 	hyprpaper
     	wvkbd
-    	wofi
     	dunst
     ];
+
+    programs = {
+	wofi = {
+	    enable = true;
+	    settings = { };
+	    style = ''${builtins.readFile ../conf.d/wofi/style.css}'';
+	};
+    };
 
     services = {
 	awww.enable = true;
@@ -25,8 +33,5 @@
 		];
 	    };
 	};
-    };
-    programs = {
-	git.enable = true;
     };
 }
